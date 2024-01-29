@@ -34,8 +34,8 @@ export const lobeAgentSchema = z.object({
   examples: lLMChatsSchema.optional(),
   homepage: z.string(),
   identifier: z.string(),
-  meta: metaDataSchema,
-  schemaVersion: z.number(),
-});
+    meta: metaDataSchema,
+    schemaVersion: z.number(),
+  });
 
-export type LobeAgent = z.infer<typeof lobeAgentSchema>;
+  export type LobeAgent = z.infer<typeof lobeAgentSchema>;
